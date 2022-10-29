@@ -23,17 +23,3 @@ Feature: As a Certifier I want to automate the tests of Shoping Cart to validate
         |atuwaku3|164Scout|HP ROAR PLUS WIRELESS SPEAKER                            |$169.99             |$169.99   |
         |atuwaku4|164Scout|HP ROAR PLUS WIRELESS SPEAKER, HP ELITEBOOK FOLIO        |$169.99;$1,261.99   |$1,431.98 |
         |atuwaku5|164Scout|HP ROAR PLUS WIRELESS SPEAKER, HP ELITEPAD 1000 G2 TABLET|$1,009.00;$169.99   |$1,178.99 |
-
-
-  Scenario: Validar que se eliminen los productos del listado Shoping cart al presionar la opción REMOVE de este
-    Given Me autentico con usuario y contraseña
-    And Agrego productos al carrito de compras
-    When Elimino un producto de la lista Shoping Cart
-    Then El listado de Shoping Cart debe actualizarse
-
-
-  Scenario: Validar que se eliminen los productos del listado Shoping cart al eliminarlos en lista Shoping cart popup
-    Given Me autentico con usuario y contraseña
-    And Agrego productos al carrito de compras
-    When Elimino un producto de la lista Shoping Cart popup
-    Then El listado de Shoping Cart debe actualizarse
